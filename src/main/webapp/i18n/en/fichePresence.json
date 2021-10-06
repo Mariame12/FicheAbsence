@@ -2,26 +2,24 @@
   "projetApp": {
     "fichePresence": {
       "home": {
-        "title": "Fiche Presences",
+        "title": "Fiche Absences",
         "refreshListLabel": "Refresh List",
-        "createLabel": "Create a new Fiche Presence",
-        "createOrEditLabel": "Create or edit a Fiche Presence",
-        "notFound": "No Fiche Presences found"
+        "createLabel": "Create a new Fiche Absence",
+        "createOrEditLabel": "Create or edit a Fiche Absence",
+        "notFound": "No Fiche Absences found"
       },
-      "created": "A new Fiche Presence is created with identifier {{ param }}",
-      "updated": "A Fiche Presence is updated with identifier {{ param }}",
-      "deleted": "A Fiche Presence is deleted with identifier {{ param }}",
+      "created": "A new Fiche Absence is created with identifier {{ param }}",
+      "updated": "A Fiche Absence is updated with identifier {{ param }}",
+      "deleted": "A Fiche Absence is deleted with identifier {{ param }}",
       "delete": {
-        "question": "Are you sure you want to delete Fiche Presence {{ id }}?"
+        "question": "Are you sure you want to delete Fiche Absence {{ id }}?"
       },
       "detail": {
-        "title": "Fiche Presence"
+        "title": "Fiche Absence"
       },
       "id": "ID",
       "activites": "Activites",
-      "heuredebut": "Heuredebut",
       "commentaire": "Commentaire",
-      "heurefin": "Heurefin",
       "date": "Date",
       "consultant": "Consultant"
     }

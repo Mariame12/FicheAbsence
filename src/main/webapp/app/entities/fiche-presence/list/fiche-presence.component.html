@@ -32,7 +32,7 @@
   <jhi-alert></jhi-alert>
 
   <div class="alert alert-warning" id="no-result" *ngIf="fichePresences?.length === 0">
-    <span jhiTranslate="projetApp.fichePresence.home.notFound">No ficheAbsencees found</span>
+    <span jhiTranslate="projetApp.fichePresence.home.notFound">No ficheAbsences found</span>
   </div>
 
   <div class="table-responsive" id="entities" *ngIf="fichePresences && fichePresences.length > 0">
@@ -43,15 +43,11 @@
           <th scope="col" jhiSortBy="activites">
             <span jhiTranslate="projetApp.fichePresence.activites">Activites</span> <fa-icon icon="sort"></fa-icon>
           </th>
-          <th scope="col" jhiSortBy="heuredebut">
-            <span jhiTranslate="projetApp.fichePresence.heuredebut">Heuredebut</span> <fa-icon icon="sort"></fa-icon>
-          </th>
+          
           <th scope="col" jhiSortBy="commentaire">
             <span jhiTranslate="projetApp.fichePresence.commentaire">Commentaire</span> <fa-icon icon="sort"></fa-icon>
           </th>
-          <th scope="col" jhiSortBy="heurefin">
-            <span jhiTranslate="projetApp.fichePresence.heurefin">Heurefin</span> <fa-icon icon="sort"></fa-icon>
-          </th>
+         
           <th scope="col" jhiSortBy="date">
             <span jhiTranslate="projetApp.fichePresence.date">Date</span> <fa-icon icon="sort"></fa-icon>
           </th>
@@ -67,9 +63,7 @@
             <a [routerLink]="['/fiche-presence', fichePresence.id, 'view']">{{ fichePresence.id }}</a>
           </td>
           <td>{{ fichePresence.activites }}</td>
-          <td>{{ fichePresence.heuredebut }}</td>
           <td>{{ fichePresence.commentaire }}</td>
-          <td>{{ fichePresence.heurefin }}</td>
           <td>{{ fichePresence.date | formatMediumDate }}</td>
           <td>
             <div *ngIf="fichePresence.consultant">
