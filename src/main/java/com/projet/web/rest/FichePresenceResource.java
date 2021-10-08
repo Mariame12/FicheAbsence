@@ -193,7 +193,7 @@ public class FichePresenceResource {
             .build();
 
         //write all users to csv file
-        writer.write(exportService.ExportFiche());
+        writer.write(exportService.ExportFiche((long)10));
     }
 
     /**
